@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSplash"
+    android:id="@+id/rel_lay"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/splash_name"
+            android:layout_width="148dp"
+            android:layout_height="148dp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#444444"
+            android:text="@string/app_name_kor"
+            android:textSize="45dp" />
+
+        <ImageView
+            android:id="@+id/splash_img"
+            android:layout_width="138dp"
+            android:layout_height="138dp"
+            android:background="@drawable/splash_img" />
+    </LinearLayout>
+
+</RelativeLayout>
