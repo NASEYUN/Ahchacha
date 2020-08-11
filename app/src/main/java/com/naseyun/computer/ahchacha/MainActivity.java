@@ -26,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
     ImageButton btn1;
     ImageButton btn2;
 
-    EditText et;
+    //EditText et;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et=(EditText)findViewById(R.id.et);
+        //et=(EditText)findViewById(R.id.et);
 
         imageView=(ImageView)findViewById(R.id.imageView);
         //toggleButton=(ToggleButton)findViewById(R.id.toggleButton);
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void mOnClick(View v){//co2값에 따라 이미지 바뀌는지 확인
+    /*public void mOnClick(View v){//co2값에 따라 이미지 바뀌는지 확인
         try {
             String co = et.getText().toString().trim();
             Co2 = Integer.parseInt(co);
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         } catch(NumberFormatException e){
             Toast.makeText(this, "숫자만 입력하세요", Toast.LENGTH_SHORT).show();
         }
-    }
+    }*/
 
     public void setImage(int Co2){//co2값에 따라 이미지 변경
         Log.d(TAG,"setImage실행");
