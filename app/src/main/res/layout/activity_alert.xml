@@ -109,8 +109,8 @@
                 <Spinner
                     android:id="@+id/durationSpinner"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:entries="@array/duration" />
+                    android:layout_height="match_parent"/>
+                    <!--android:entries="@array/duration"-->
             </TableRow>
 
         </TableLayout>
