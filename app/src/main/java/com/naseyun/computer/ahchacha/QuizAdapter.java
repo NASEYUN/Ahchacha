@@ -25,7 +25,7 @@ public class QuizAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int position) {
+    public ListViewItem getItem(int position) {
         return arrayList_quiz.get(position);
     }
 
