@@ -2,15 +2,16 @@ package com.naseyun.computer.ahchacha;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+
 import androidx.annotation.NonNull;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class CustomDialog extends Dialog {
 
@@ -19,7 +20,6 @@ public class CustomDialog extends Dialog {
     private EditText Quiz;
     private EditText Answer;
     private Context context;
-    private QuizAdapter adapter;
     private String writeQuiz;
     private String writeAnswer;
 
@@ -34,8 +34,6 @@ public class CustomDialog extends Dialog {
         layoutParams.dimAmount = 0.2f;
         getWindow().setAttributes(layoutParams);
 
-        adapter = new QuizAdapter();
-
         //setting
         OkBtn = findViewById(R.id.okBtn);
         CancelBtn = findViewById(R.id.cancelBtn);
@@ -48,9 +46,6 @@ public class CustomDialog extends Dialog {
         OkBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                adapter.addItem(getWriteQuiz(), getWriteAnswer());
-                Log.v("seyuuuun", getWriteQuiz());
-                Log.v("seyuuuun", getWriteAnswer());
                 dismiss();
             }
         });

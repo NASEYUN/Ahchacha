@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "962236925305",
+    "firebase_url": "https://ahchacha-95381.firebaseio.com",
+    "project_id": "ahchacha-95381",
+    "storage_bucket": "ahchacha-95381.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962236925305:android:fc8b5973d5ffb93f469ba8",
+        "android_client_info": {
+          "package_name": "com.naseyun.computer.ahchacha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962236925305-79vseb9aob0dtii01ul2flrtgl1f5oev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTde9OTanhjPv2yn7LZVCX0X2q62RyLY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962236925305-79vseb9aob0dtii01ul2flrtgl1f5oev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
