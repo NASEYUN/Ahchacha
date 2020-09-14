@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                 startActivity(intent);
             }
         });
+        chronometer.start();
 
         //권한설정
         if(Build.VERSION.SDK_INT >= 23) {
